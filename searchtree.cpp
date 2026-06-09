@@ -58,3 +58,13 @@ public:
                 currentnode = currentnode->rightchild;
             }
         }
+
+        if (element < parent->info) 
+        {
+            parent->leftchild = newnode;
+        } 
+        else 
+        {
+            parent->rightchild = newnode;
+        }
+    }
