@@ -128,3 +128,20 @@ void postorder(node *ptr)
     }
 }
 };
+
+int main()
+{
+    BinaryTree obj;
+    int choice;
+    string element;
+
+    while (true)
+    {
+        cout << "\nMenu" << endl;
+        cout <<"1. Implement insert operation" << endl;
+        cout <<"2. Perform inorder traversal" << endl;
+        cout <<"3. Perform preorder traversal" << endl;
+        cout <<"4. Perform postorder traversal" << endl;
+        cout <<"5. Exit" << endl;
+        cout << "\nEnter your choice (1-5): ";
+        cin >> choice;
