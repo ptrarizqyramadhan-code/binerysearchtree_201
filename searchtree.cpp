@@ -45,3 +45,16 @@ public:
 
         node *currentnode = ROOT;
         node *parent = NULL;
+
+        while (currentnode != NULL)
+        {
+            parent = currentnode;
+            if (element < currentnode->info)
+            {
+                currentnode = currentnode->leftchild;
+            }
+            else
+            {
+                currentnode = currentnode->rightchild;
+            }
+        }
