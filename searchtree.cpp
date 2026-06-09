@@ -85,3 +85,13 @@ void search (string element, node *&parent, node *&currentnode)
             currentnode = currentnode->rightchild;
     }
 }
+
+void inorder(node *ptr)
+{
+    if (ptr != NULL)
+    {
+        inorder(ptr->leftchild);
+        cout << ptr->info << " ";
+        inorder(ptr->rightchild);
+    }
+}
