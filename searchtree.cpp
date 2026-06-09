@@ -145,3 +145,11 @@ int main()
         cout <<"5. Exit" << endl;
         cout << "\nEnter your choice (1-5): ";
         cin >> choice;
+
+        switch (choice)
+        {
+        case 1:
+            cout << "Enter a word: ";
+            cin >> element;
+            obj.insert(element);
+            break;
