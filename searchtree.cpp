@@ -42,3 +42,6 @@ public:
             ROOT = newnode;
             return;
         }
+
+        node *currentnode = ROOT;
+        node *parent = NULL;
