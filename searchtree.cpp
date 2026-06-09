@@ -36,3 +36,9 @@ public:
         newnode->info = element;
         newnode->leftchild = NULL;
         newnode->rightchild = NULL;
+
+        if (ROOT == NULL) 
+        {
+            ROOT = newnode;
+            return;
+        }
